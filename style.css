@@ -30,7 +30,7 @@ a {
 
 
 header {
-    background: #090428;
+    background:  #08264a;
     border-bottom: 1px solid #e8dde6;
     position: sticky;
     top: 0;
@@ -111,7 +111,7 @@ nav a.active {
 }
 
 .hero h1 {
-    font-size: 58px;
+    font-size: 45px;
     line-height: 1.1;
     margin-bottom: 15px;
 }
@@ -121,7 +121,7 @@ nav a.active {
 }
 
 .hero h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #000000;
     margin-bottom: 20px;
@@ -473,12 +473,12 @@ nav a.active {
 
 
 footer {
-    background: #090428;
+    background:#08264a;
     color: white;
 }
 
 .footer-content {
-    min-height: 130px;
+    min-height: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -505,7 +505,7 @@ footer {
 
 .copyright p {
     color: #999999;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -561,7 +561,7 @@ footer {
     }
 
 
-    /* Hero */
+    
 
     .hero {
         padding: 65px 0;
@@ -701,4 +701,51 @@ footer {
     top: 0;
     transform: none;
     z-index: 5;
+}
+
+
+
+
+/* =========================================
+   KEEP FOOTER VISIBLE WITHOUT EXTRA SCROLL
+   ========================================= */
+
+/* Make the page fill the screen */
+html,
+body {
+    min-height: 100%;
+}
+
+/* Allow footer to stay at the bottom */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content takes available space */
+main {
+    flex: 1;
+}
+
+/* Remove unnecessary fixed height from pages */
+.projects-section,
+.contact-section {
+    min-height: auto;
+}
+
+/* Keep enough space around the content */
+.projects-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.contact-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* Footer stays at the bottom */
+footer {
+    margin-top: auto;
 }
